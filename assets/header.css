@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Londrina Solid';
+}
+:root{
+    --FirstColor: #29E0A9;
+    --SecondColor:#f6a4b5;
+    --BgColor: #22252B;
+    --FontColor: #e1e1e1;
+    --TitleColor: #fff;
+}
+header{
+    background: var(--BgColor);
+    background-image: url(../Vetor/BG_Header.svg);
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+header::before{
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 55%;
+    height: 1px;
+
+    background: #ffffff2e;
+}
+.header_nav{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+    transition: .3s;
+}
+.logo:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+}
+.header_nav nav{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header_nav nav a{
+    text-decoration: none;
+    color: var(--FontColor);
+    font-size: 1.2rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-50%);
+
+}
+.header_nav nav a:hover{
+    color: var(--FirstColor);
+}
+.contrate{
+    background: transparent;
+    border: 1px solid var(--FirstColor);
+    color: var(--FontColor);
+    font-weight: 200;
+    padding: 8px 36px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    user-select: none;
+
+    transition: ease-in-out .2s;
+}
+.contrate:hover{
+    background: var(--FirstColor);
+    color: var(--TitleColor);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.header_main{
+    width: 85%;
+    margin: 100px auto;
+}
+
+.typewriter-container {
+    display: inline-block;
+    overflow: hidden; /* Esconde o texto extra */
+    white-space: nowrap;
+    letter-spacing: 2px;
+  }
+  
+  .typewriter {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--FontColor);
+    font-weight: 200;
+    margin: 0; /* Remove margens padrão do h4 */
+    white-space: nowrap; /* Evita que o texto quebre */
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    border-right: 3px solid black; /* Simula o cursor */
+    animation: typing 5s steps(40, end) 2s infinite, blink 0.75s step-end infinite;
+    user-select: none;
+  }
+  
+
+ /* Animação para digitar o texto */
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; } /* Conclui a digitação */
+    90% { width: 100%; } /* Atraso de 4 segundos após a digitação */
+    100% { width: 0; } /* Apaga o texto */
+  }
+  
+  /* Animação do cursor piscando */
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+  }
+  
+
+
+
+
+.header_main h1{
+    margin-top: 20px;
+    color: var(--TitleColor);
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    user-select: none;
+}
+.header_main p{
+    color: var(--FontColor);
+    margin-top: 25px;
+    font-size: 1.35rem;
+    line-height: 25px;
+    letter-spacing: 1.6px;
+    font-weight: 100;
+    user-select: none;
+}
+
+.serv{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 35px;
+}
+.card_serv{
+    display: flex;
+    flex-direction: column;
+}
+.card_serv .text_icon_Card{
+    color: var(--TitleColor);
+    font-weight: 200;
+    font-size: .9rem;
+    margin-top: 7px;
+    user-select: none;
+}
+.card_serv img{
+    width: 35px;
+}
+
+
+.impulso{
+    margin-top: 40px;
+    padding: 15px 25px;
+    color: #000;
+    border: 1px solid #000;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    transition: .3s ease-in-out;
+    background: var(--FirstColor);
+    box-shadow: 0 0;
+
+    user-select: none;
+    
+}
+.impulso:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px var(--FirstColor);
+    cursor: pointer;
+}
+
+
+.wpp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-weight: 200;
+    color: var(--TitleColor);
+}
+.wpp span{
+    background: var(--FirstColor);
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+.wpp img{
+    width: 60px;
+}
+
+main{
+    background: var(--BgColor);
+}
